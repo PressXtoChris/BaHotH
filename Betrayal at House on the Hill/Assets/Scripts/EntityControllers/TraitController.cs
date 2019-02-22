@@ -29,13 +29,13 @@ public class TraitController : MonoBehaviour
     private List<int> _knowledgeLevels;
 
     [Range(0, int.MaxValue)]
-    private int _speedOverflow;
+    private int _speedOverflow = 0;
     [Range(0, int.MaxValue)]
-    private int _mightOverflow;
+    private int _mightOverflow = 0;
     [Range(0, int.MaxValue)]
-    private int _sanityOverflow;
+    private int _sanityOverflow = 0;
     [Range(0, int.MaxValue)]
-    private int _knowledgeOverflow;
+    private int _knowledgeOverflow = 0;
 
     // Start is called before the first frame update
     void Awake()
@@ -47,6 +47,19 @@ public class TraitController : MonoBehaviour
     void Update()
     {
         
+    }
+
+    public void InitialiseValues(CharacterFactory.Traits traitsJson)
+    {
+        _speedLevel = traitsJson.SpeedLevel;
+        _mightLevel = traitsJson.MightLevel;
+        _sanityLevel = traitsJson.SanityLevel;
+        _knowledgeLevel = traitsJson.KnowledgeLevel;
+
+        _speedLevels = traitsJson.SpeedLevels;
+        _mightLevels = traitsJson.MightLevels;
+        _sanityLevels = traitsJson.SanityLevels;
+        _knowledgeLevels = traitsJson.KnowledgeLevels;
     }
 
     public int Roll(Trait trait)
