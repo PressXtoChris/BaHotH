@@ -1,0 +1,29 @@
+{
+	"Name": "Zoe Ingstrom",
+	"Age": 8,
+	"Height": 1.1,
+	"Weight": 22,
+	"Hobbies": [
+		"Dolls",
+		"Music"
+	],
+	"Birthday": "1970-11-05",
+	"Traits": {
+		"SpeedLevel": 4,
+		"SpeedLevels": [
+			0, 4, 4, 4, 4, 5, 6, 8, 8
+		],
+		"MightLevel": 4,
+		"MightLevels": [
+			0, 2, 2, 3, 3, 4, 4, 6, 7
+		],
+		"SanityLevel": 3,
+		"SanityLevels": [
+			0, 3, 4, 5, 5, 6, 6, 7, 8
+		],
+		"KnowledgeLevel": 3,
+		"KnowledgeLevels": [
+			0, 1, 2, 3, 4, 4, 5, 5, 5
+		]
+	}
+}
