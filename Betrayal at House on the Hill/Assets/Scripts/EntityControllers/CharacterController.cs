@@ -6,6 +6,7 @@ using UnityEngine;
 [RequireComponent(typeof(TraitController))]
 public class CharacterController : MonoBehaviour
 {
+    public TraitController TraitController;
 
     public string Name { get; private set; }
 
@@ -17,14 +18,11 @@ public class CharacterController : MonoBehaviour
 
     public bool Alive { get; set; }
 
-    private TraitController _traitController;
-
-
 
     // Start is called before the first frame update
     void Awake()
     {
-        _traitController = GetComponent<TraitController>();
+        TraitController = GetComponent<TraitController>();
         Alive = true;
     }
 
@@ -41,6 +39,6 @@ public class CharacterController : MonoBehaviour
         Height = characterJson.Height;
         Weight = characterJson.Weight;
         Hobbies = characterJson.Hobbies;
-        _traitController.InitialiseValues(characterJson.Traits);
+        TraitController.InitialiseValues(characterJson.Traits);
     }
 }
