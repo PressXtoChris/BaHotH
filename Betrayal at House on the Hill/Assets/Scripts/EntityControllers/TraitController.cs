@@ -7,6 +7,8 @@ public class TraitController : MonoBehaviour
 {
     private const int MaxLevel = 8;
 
+    private CharacterController _character;
+
     public int Speed { get => _speedLevels[_speedLevel]; }
     public int Might { get => _mightLevels[_mightLevel]; }
     public int Sanity { get => _sanityLevels[_sanityLevel]; }
@@ -36,9 +38,9 @@ public class TraitController : MonoBehaviour
     private int _knowledgeOverflow;
 
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
-        
+        _character = GetComponent<CharacterController>();
     }
 
     // Update is called once per frame
@@ -117,7 +119,7 @@ public class TraitController : MonoBehaviour
             {
                 if (Globals.HauntActive)
                 {
-                    Alive = false;
+                    _character.Alive = false;
                 }
                 else
                 {

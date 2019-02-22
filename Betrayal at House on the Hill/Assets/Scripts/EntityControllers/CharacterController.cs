@@ -15,7 +15,7 @@ public class CharacterController : MonoBehaviour
     public List<string> Hobbies { get; private set; }
     public DateTime Birthday { get; private set; }
 
-    public bool Alive { get; private set; }
+    public bool Alive { get; set; }
 
     private TraitController _traitController;
 
