@@ -1,0 +1,14 @@
+{
+	"Name": "Foyer",
+	"Floor": 1,
+	"Card": null,
+	"CanExitNorth": true,
+	"CanExitEast": true,
+	"CanExitSouth": true,
+	"CanExitWest": true,
+	"NorthRoom": "Grand Staircase",
+	"SouthRoom": "Entrance Hall",
+	"ConnectedRooms": null,
+	"ExitRollTrait": null,
+	"ExitRollTarget": 0
+}

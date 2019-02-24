@@ -1,0 +1,14 @@
+{
+	"Name": "Upper Landing",
+	"Floor": 2,
+	"Card": null,
+	"CanExitNorth": true,
+	"CanExitEast": true,
+	"CanExitSouth": true,
+	"CanExitWest": true,
+	"ConnectedRooms": [
+		"Grand Staircase"
+	],
+	"ExitRollTrait": null,
+	"ExitRollTarget": 0
+}

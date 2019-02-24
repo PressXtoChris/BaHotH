@@ -1,0 +1,13 @@
+{
+	"Name": "Entrance Hall",
+	"Floor": 1,
+	"Card": null,
+	"CanExitNorth": true,
+	"CanExitEast": true,
+	"CanExitSouth": false,
+	"CanExitWest": true,
+	"NorthRoom": "Foyer",
+	"ConnectedRooms": null,
+	"ExitRollTrait": null,
+	"ExitRollTarget": 0
+}

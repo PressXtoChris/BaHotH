@@ -1,0 +1,12 @@
+{
+	"Name": "Basement Landing",
+	"Floor": 0,
+	"Card": null,
+	"CanExitNorth": true,
+	"CanExitEast": true,
+	"CanExitSouth": true,
+	"CanExitWest": true,
+	"ConnectedRooms": null,
+	"ExitRollTrait": null,
+	"ExitRollTarget": 0
+}

@@ -1,11 +1,21 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-public enum Trait
+﻿public enum Trait
 {
     Speed,
     Might,
     Sanity,
     Knowledge
+}
+
+public enum Card
+{
+    Item,
+    Event,
+    Omen
+}
+
+public enum Floor
+{
+    Basement,
+    Ground,
+    Upper
 }
